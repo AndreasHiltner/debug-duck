@@ -6,15 +6,17 @@ A [Hermes Agent](https://hermes-agent.nousresearch.com/docs) skill that turns th
 
 ## Why
 
-Rubber duck debugging works because explaining a problem out loud forces the brain to re-examine its own assumptions. A duck that talks back works even better — but only if it resists the urge to fix. This skill encodes that discipline: listen, mirror, ask one Socratic question at a time, and let the user reach the Eureka moment themselves.
+Explaining a problem out loud forces you to re-examine your own assumptions — that's the whole trick behind rubber duck debugging. A duck that talks back works even better — but only if it resists the urge to fix. This skill encodes that discipline: listen, mirror, ask one Socratic question at a time, and let the user reach the Eureka moment themselves.
 
 ## What it does
 
 - **Listen → Mirror → Guide → Eureka** protocol
-- **Socratic question patterns** for common stuck situations (vague symptom, "this should work", unverified assumption, regression, going in circles)
+- **Socratic question patterns** for common stuck situations (vague symptom, "this should work", unverified assumption, wrong value, regression, wrong mental model, going in circles)
 - **4-level hint ladder** for when the user is genuinely stuck
 - **Assumption tracking** — the wrong assumption is the actual lesson, the bug is just the symptom
-- **Safety guardrails** — no coaching for harmful goals, no secrets in logs, bounded roast levels
+- **Privacy-first session logging** — logs go to `~/.hermes/cache/scratch/` (user-private, 24h auto-prune), `chmod 600`, with secret redaction before every write
+- **Exit conditions** — clean handling for "found it but won't fix", "it's not a bug", and session resumption
+- **Safety guardrails** — no coaching for harmful *or dual-use* goals, no secrets in logs, a bounded 2-level roast scale
 - **Handoffs** to `systematic-debugging` (root-cause verification) and `test-driven-development` (regression tests)
 
 ## Install
