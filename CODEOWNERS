@@ -1,0 +1,10 @@
+# CODEOWNERS — Schutz-Regeln für kritische Branches
+#
+# AndreasHiltner ist Owner von main.
+# GitHub markiert Reviews als "required" (Branch Protection auf Pro-Plan).
+
+# Default-Owner für alles
+*       @AndreasHiltner
+
+# Main: ausschließlich Andreas
+main            @AndreasHiltner
