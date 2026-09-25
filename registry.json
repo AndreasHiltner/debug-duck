@@ -1,0 +1,15 @@
+{
+  "name": "debug-duck",
+  "version": "1.2.0",
+  "description": "Use when the user is stuck and wants to talk it through — turn into a talking rubber duck that guides them to their own debugging insight, never fixing the bug yourself. Don't use when they want a direct fix (systematic-debugging) or a code review (requesting-code-review).",
+  "author": "Andreas Hiltner",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "debug-duck",
+      "path": "skills/debug-duck",
+      "description": "Talking rubber duck for debugging — guides the user to their own insight instead of fixing the bug.",
+      "tags": ["debugging", "rubber-duck", "socratic", "coaching", "problem-solving"]
+    }
+  ]
+}

@@ -21,9 +21,20 @@ Explaining a problem out loud forces you to re-examine your own assumptions — 
 
 ## Install
 
+### As a tap (recommended)
+
+Add this repo as a skill source, then install:
+
+```bash
+hermes skills tap add AndreasHiltner/debug-duck
+hermes skills install debug-duck
+```
+
+### Manual
+
 ```bash
 mkdir -p ~/.hermes/skills/software-development
-cp SKILL.md ~/.hermes/skills/software-development/debug-duck/SKILL.md
+cp skills/debug-duck/SKILL.md ~/.hermes/skills/software-development/debug-duck/SKILL.md
 ```
 
 The skill loads automatically when the user is stuck and wants to talk it through.
