@@ -1,7 +1,7 @@
 {
   "name": "debug-duck",
-  "version": "1.2.0",
-  "description": "Use when the user is stuck and wants to talk it through — turn into a talking rubber duck that guides them to their own debugging insight, never fixing the bug yourself. Don't use when they want a direct fix (systematic-debugging) or a code review (requesting-code-review).",
+  "version": "1.2.1",
+  "description": "Help the user find their own bug, rubber-duck style.",
   "author": "Andreas Hiltner",
   "license": "MIT",
   "skills": [
